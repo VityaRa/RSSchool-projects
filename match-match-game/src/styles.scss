@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import "./components/shared/colors.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+}
+
+html {
+  font-size: 20px;
+}
+
+main {
+  min-height: calc(100vh - 2rem);
+}
+
+body {
+  min-height: 100vh;
+  background: $interface-color;
+  color: $interface-color;
+}
+
+
+
+
