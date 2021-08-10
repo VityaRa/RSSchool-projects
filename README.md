@@ -1,2 +1,1 @@
-# vityara-JSFE2021Q1
-Private repository for @vityara
+Here are all my projects from RSSchool
