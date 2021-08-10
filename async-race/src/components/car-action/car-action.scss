@@ -1,0 +1,11 @@
+.car__action {
+  margin-top: 1rem;
+  & > * {
+    margin-bottom: 0.25rem;
+  }
+}
+
+.car__action__create > *,
+.car__action__update > * {
+  margin-right: 0.25rem;
+}

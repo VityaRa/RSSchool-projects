@@ -1,0 +1,16 @@
+.winner__item div {
+  display: flex;
+}
+
+.winner__item div > * {
+  width: 100px;
+  margin-left: 0.5rem;
+}
+
+.winner__item svg {
+  height: 1.15rem;
+}
+
+.winner__item {
+  margin: 1rem 0;
+}

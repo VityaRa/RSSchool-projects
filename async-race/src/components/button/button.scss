@@ -1,0 +1,36 @@
+.btn {
+  text-transform: uppercase;
+  padding: 0 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #000;
+  background-color: #e0ebfb;
+  &:hover {
+    background-color: #fff !important;
+  }
+}
+
+.btn.disabled__input {
+  &:hover {
+    background-color: gray !important;
+  }
+  background-color: gray;
+}
+
+.btn-action {
+  background-color: #ddf7ae;
+}
+
+.btn-pagination {
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.btn-car__action.btn-action {
+  background-color: #ddf7ae;
+}
+
+.btn-car__action {
+  background-color: rgba(255, 99, 99, 0.76);
+}

@@ -1,0 +1,28 @@
+.race__track {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.flag-container {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+.car__item {
+  margin: 2rem 0;
+  & p {
+    color: #fff;
+    margin: 0.25rem 0;
+  }
+}
+.car__icon {
+  width: 10%;
+}
+.car__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.car__item__line {
+  border: 1px dashed #fff;
+}
