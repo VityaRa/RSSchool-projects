@@ -1,0 +1,16 @@
+.container {
+  background-color:antiquewhite;
+  border-radius: 20px;
+  overflow-x: scroll;
+  & .inner {
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: left;
+  width: 80%;
+  margin-left: 20px;
+}

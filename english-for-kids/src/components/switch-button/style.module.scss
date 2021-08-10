@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+
+.container {
+  width: $switch_container_width;
+  height: 30px;
+  background: $light_green;
+  border-radius: 60px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}

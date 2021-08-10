@@ -1,0 +1,35 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.inner {
+  width: 100%;
+  height: 100%;
+  padding: 0 $switch_padding;
+
+  @include flex_between();
+  @include remove_select();
+  & .circle {
+    min-height: $switch_dot_size;
+    min-width: $switch_dot_size;
+    background: $white;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 4px rgba($color: #000000, $alpha: 0.1);
+  }
+  &.active {
+    & .circle {
+      transform: translateX(
+        $switch_container_width - $switch_dot_size - 2 * $switch_padding
+      );
+    }
+    & .text {
+      transform: translateX(
+        -($switch_container_width - $switch_dot_size - 4 * $switch_padding)
+      );
+    }
+    background: $light_red;
+  }
+  & .text {
+    @include regular_text();
+    font-size: 0.6rem;
+  }
+}

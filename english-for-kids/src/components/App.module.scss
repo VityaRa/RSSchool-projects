@@ -1,0 +1,17 @@
+@import "../styles/mixins.scss";
+
+.app {
+  @include flex(flex-start);
+  flex-direction: column;
+  min-height: calc(100vh - 2rem);
+  margin-top: 2rem;
+  max-width: 1008px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
