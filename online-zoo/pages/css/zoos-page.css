@@ -1,0 +1,469 @@
+.sidebar{
+    top: 0;
+    position: sticky;
+    left: 0;
+    margin: 0;
+}
+.sidebar__container{
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    width: 220px;
+    transition: .3s;
+}
+.sidebar__description{
+    display: none;
+    height: 69px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+.sidebar__label-btn{
+    box-sizing: border-box;
+}
+.cam__top{
+    padding-top: 25px !important;
+    justify-content: space-between !important;
+}
+.cam__hidden{
+    position: absolute;
+    width: 300px;
+    height: 205px;
+    z-index: 1001;
+    top: 0;
+    background-color: rgba(0,0,0,0.0015);
+    cursor: pointer;
+}
+.sidebar__active{
+    width: 300px !important;
+}
+.sidebar__active .sidebar__top{
+    justify-content: flex-end !important;
+}
+.sidebar__active .sidebar__description{
+    display: inline;
+}
+.sidebar__active .sidebar__label{
+    display: block;
+}
+.sidebar__active .sidebar__label-btn{
+    transform: rotate(180deg);
+}
+
+.sidebar > * {
+    box-sizing: border-box;
+}
+.sidebar__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #20113d;
+    padding: 25px 0;
+    border-top: 1px solid white;
+    max-height: 170px;
+}
+
+
+.sidebar__image{
+    background-color: #f58021;
+    width: 108px;
+    height:  108px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+.sidebar__ref:hover div.sidebar__image{
+    background-color: white;
+}
+.sidebar__ref:hover{
+    border: 2px solid white;
+}
+
+.sidebar__image-active{
+    background-color: white;
+}
+.sidebar__active-border{
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid white;
+}
+.sidebar__inactive-border{
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid #20113d;
+    transition: .3sf;
+}
+.sidebar__list{
+    display: flex;
+    flex-direction: column;
+}
+.sidebar__top {
+    border-bottom: 1px solid #fff;
+    justify-content: flex-end;
+
+}
+.sidebar__label{
+    background-color: #f58021;
+    color: white;
+    border-bottom-right-radius: 5px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 120px;
+    height: 38px;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.sidebar__bottom-btn{
+    padding: 10px;
+}
+.sidebar__bottom-btn:hover{
+    border: 1px solid #f58021;
+}
+.sidebar__label svg{
+    left: 2px;
+    top: 8px;
+    position: relative;
+}
+.sidebar__label-text{
+    position: relative;
+    top:4px;
+}
+
+.sidebar__label-btn{
+    width: 75px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.sidebar__label-btn:hover{
+    border: 1px solid #f58021;
+}
+.cam{
+    margin-bottom: 150px;
+}
+.cam__top{
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cam__title{
+    text-transform: uppercase;
+    font-size: 54px;
+    position: relative;
+    z-index: -1;
+}
+.cam__donate-btn{
+    background-color: #f58021;
+}
+.cam__donate-btn svg{
+    position: relative;
+    top: 4px;
+    left: 4px;
+}
+.cam__donate-btn:hover{
+    background-color: #d26004;
+}
+
+.cam__video{
+    height: 790px;
+    margin: 65px auto 110px auto;
+}
+@media screen and (max-width: 1920px) {
+    .cam__video{
+        width: 1000px;
+    }
+}
+.cam__more{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+    margin: auto;
+}
+.cam__inner{
+    height: 205px;
+    display: flex;
+    width: 1040px;
+    justify-content: space-between;
+}
+.cam__more-title{
+    font-size: 42px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.cam__video iframe{
+    width: 100%;
+    height: 100%;
+}
+.cam__item iframe{
+    border-radius: 2px;
+    height: 100%;
+    width: 100%;
+}
+.cam__item {
+    box-sizing: border-box;
+    position: relative;
+
+}
+.cam__item-active{
+    border: 3px solid #f58021;
+}
+.cam__button{
+    width: 80px;
+    height: 80px;
+}
+.cam__button:focus{
+    border: 2px solid #f58021;
+}
+.btn-left{
+    transform: rotate(180deg);
+}
+
+.about-animal{
+    margin-top: 150px;
+}
+.about-animal__pre-info{
+    width: 1040px;
+    margin: auto;
+    -webkit-box-shadow: 0px -2px 93px 24px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px -2px 93px 24px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px -2px 93px 24px rgba(34, 60, 80, 0.2);
+    text-align: center;
+    margin-bottom: 150px;
+
+}
+.about-animal__pre-header{
+    padding-top: 60px;
+    font-size: 42px;
+    text-transform: uppercase;
+}
+.about-animal__pre-subheader{
+    padding-top: 40px;
+    font-size: 26px;
+    padding-bottom: 50px;
+    width: 919px;
+    margin: auto;
+}
+.about-animal__info{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 1160px;
+
+}
+.about-animal__item{
+    padding-bottom: 25px;
+    position: relative;
+}
+.about-animal__item:last-child{
+    padding-bottom: 0;
+}
+.about-animal__key{
+    font-size: 26px;
+    font-weight: 600;
+}
+.about-animal__value{
+    font-size: 18px;
+    padding-left: 23px;
+}
+
+.about-animal__full-info{
+    margin-top: 50px;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 150px;
+}
+.about-animal__btn{
+    color: #f58021;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 240px;
+    display: flex;
+    transition: .3s;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+}
+.about-animal__btn:hover{
+    background-color: #f58021;
+    color: white;
+}
+
+.about-animal__btn{
+    position: absolute;
+    left: 380px;
+    top: -20px;
+}
+.about-animal__btn svg{
+    position: relative;
+    left: 15px;
+    fill: #f58021; 
+
+}
+.about-animal__btn:hover svg{
+    fill: white;
+}
+.about-animal__item p{
+    display: flex;
+    align-items: center;
+}
+
+.cam__item {
+    border-radius: 5px ;
+}
+.sidebar__animal:nth-child(n+5) {
+    display: none;
+}
+@media screen and (max-width: 1919px) {
+    .sidebar__container{
+        width: 115px;
+        box-sizing: border-box;
+    }
+    .sidebar__label{
+        display: none;
+    }
+    .sidebar__active-border{
+        border: none;
+        background: none;
+    }
+    .sidebar__top {
+        justify-content: center;
+    }
+    .sidebar__image {
+        width: 80px;
+        height: 80px;
+    }
+}
+@media screen and (max-width: 1439px) {
+    .cam__item, .cam__hidden{
+        width: 265px !important;
+    }
+    .cam__inner{
+        width: 835px !important;
+    }
+    .cam__container{
+        max-width: 1200px;
+    }
+    
+}
+@media screen and (max-width: 1199px) {
+    .cam__top{
+        display: block;
+    }
+    .cam__title{
+        text-align: center;
+    }
+    .cam__donate-btn{
+        position: absolute;
+    }
+    .cam__more{
+        width: auto !important;
+    }
+    .cam__inner{
+        width: 445px !important;
+        height: auto !important;
+    }
+    .cam__item{
+        width: 135px !important;
+        height: 105px !important;
+    }
+    .cam__more-title{
+        font-size: 26px !important;
+    }
+    .cam__button{
+        display: none !important;
+    }
+    .about-animal__info{
+        display: block !important;
+    }
+    .about-animal__pre-info{
+        width: 100% !important;
+    }
+    .about-animal__pre-subheader{
+        width: 540px  !important;
+    }
+    .about-animal__info{
+        width: 100% !important;
+    }
+    .about-animal__info-image{
+        width: 100% !important;
+    }
+    .about-animal__list{
+        padding-top: 100px;
+    }
+    .about-animal__btn{
+        left: 300px !important;
+    }
+    .cam__video{
+        height: 400px !important;
+    }
+    .cam__title{
+        font-size: 42px !important;
+    }
+
+    .cam__video{
+        margin-top: 25px !important;
+    }
+    .cam__donate-btn{
+        height: 60px !important;
+        top: 650px !important;
+        right: 20px !important;
+    }
+    .cam{
+        margin-bottom: 80px !important;
+    }
+    .cam__more-title, .cam__more{
+        margin-left: 155px !important;
+        text-align: left !important;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .cam__inner{
+        width: 100% !important;
+    }
+    .cam__item{
+        width: 140px !important;
+        height: 110px !important;
+    }
+    .cam__item:last-child{
+        display: none !important;
+    }
+    .about-animal__pre-subheader{
+        width: 280px !important;
+    }
+    .about-animal__item:last-child{
+        display: block !important;
+    }
+    .about-animal__btn{
+        left: 0 !important;
+        top: 20px !important;
+    }
+    .cam__donate-btn{
+        left: 40px !important;
+        top: 725px !important;
+    }
+    .cam__more-title, .cam__more{
+        margin-left: 0 !important;
+        text-align: center !important;
+    }
+    .cam__more-title{
+        padding-top: 60px !important;
+    }
+    .sidebar{
+        width: 50px !important;
+    }
+    .sidebar__item{
+        width: auto !important;
+        height: auto !important;
+    }
+}

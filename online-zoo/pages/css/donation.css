@@ -1,0 +1,137 @@
+.donation__donate{
+    color: white;
+    width: 320px;
+    height: 75px;
+    border: 1px solid white;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+
+.donation__image{
+    background-color: #f58021;
+    background-image: url('../../assets/icons/Right_arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 80px;
+    border-radius: 5px;
+}
+.donation__text-input {
+    box-sizing: border-box;
+    padding-left: 21px;
+    width: 234px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.donation__text-input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.donation__text-input-container::before{
+    content: "$";
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    left: 15px;
+    
+}
+input::-webkit-input-placeholder { 
+    color: white; 
+}
+input .donation_submit-input{
+    border: 0;
+}
+.donation_submit-input:hover{
+    background-color: #d26004;
+}
+.donation{
+    background-color: #20113d;
+    padding-top: 60px;
+    padding-bottom: 75px;
+
+}
+
+.donation__title{
+    font-size: 42px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.donation__about{
+    padding-top: 35px;
+    width: 609px;
+    font-size: 18px;
+}
+
+.donation__text{
+    padding-bottom: 20px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
+.donation__extra-text{
+    padding-left: 20px;
+}
+
+.container__donation{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1439px) {
+    .container__donation{
+        max-width: 1000px !important;
+    }
+    .donation__about{
+        width: inherit !important; 
+    }
+    .donation__text{
+        padding-bottom: 10px !important;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .container__donation{
+        display: block;
+        max-width: 600px !important;
+    }
+    .donation{
+        text-align: center;
+    }
+    .donation__text{
+        padding-top: 30px !important;
+    }
+    .donation__donate{
+        margin: auto;
+    }
+    .container__donation {
+        max-width: 600px !important;
+    }
+
+
+}
+
+@media screen and (max-width: 639px) {
+    .donation__description, .donation__title, .donation__about{
+        width: 100% !important;
+    }
+    .donation__title{
+        font-size: 26px !important;
+    }
+    .donation__donate{
+        height: 45px !important;
+        width: 300px !important;
+    }
+    .container__donation{
+        max-width: 300px !important;
+    }
+}

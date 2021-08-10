@@ -1,0 +1,366 @@
+.premodal__container, .modal__container > * {
+  box-sizing: border-box;
+}
+.premodal__container, .modal__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+#modal__month.wrong, #modal__year.wrong {
+  background-color: rgba(245,128,33,0.2);
+  border: 1px solid #F58021 !important;
+}
+.modal__bill__field input.wrong, .modal__payment input.wrong{
+  background-color: rgba(245,128,33,0.2);
+  border: 1px solid #F58021 !important;
+}
+.premodal__container.premodal__unactive, .modal__container.modal__unactive{
+  width: 0 !important;
+  height: 0 !important;
+}
+.modal__window__hidden{
+  display: none;
+}
+.modal__other input:not([disabled]) {
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
+}
+.premodal__inner{
+  border-radius: 5px;
+  width: 1160px;
+  height: 815px;
+  overflow: hidden;
+  -webkit-box-shadow: 4px 4px 55px 7px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 55px 7px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 55px 7px rgba(34, 60, 80, 0.2);
+  background-color: #fff;
+
+}
+.modal__unactive{
+  width: 0 !important;
+  height: 0 !important;
+}
+.modal__inner [data-choose="true"].active__item {
+  background-color: #00A092;
+}
+
+.premodal__image {
+  height: 387px;
+  position: relative;
+}
+.premodal__close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.premodal__item.modal__item.active__item{
+  background-color: #00A092;
+}
+.premodal__about {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.premodal__title {
+  text-transform: uppercase;
+  color: #f58021;
+  font-size: 54px;
+  margin: auto;
+  width: 670px;
+  text-align: center;
+}
+.premodal__text {
+  width: 570px;
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+}
+.premodal__payments{
+  display: flex;
+  width: 1000px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.premodal__close{
+  cursor: pointer;
+}
+.modal__next {
+  cursor: pointer;
+}
+.modal__next:hover{
+  background-color: rgba(0, 160, 146, 0.5); 
+}
+.premodal__item{
+  background-color: #00A092;
+  color: white;
+  font-size: 18px;
+  min-width: 120px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.premodal__item.active{
+  background-color: #00A092;
+}
+.premodal__item:hover{
+  background-color: #05786E;
+}
+.premodal__item:last-child{
+  width: 200px;
+}
+.premodal__item__text{
+  text-transform: uppercase;
+}
+.modal__inner{
+  width: 920px;
+  height: 820px;
+  background-color: #fff;
+  -webkit-box-shadow: 4px 4px 55px 7px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 55px 7px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 55px 7px rgba(34, 60, 80, 0.2);
+}
+.modal__inner > * {
+  padding: 0 120px;
+}
+.modal__title{
+  height: 135px;
+  background-color: #f58021;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+}
+.modal__title h2{
+  font-size: 42px;
+  font-weight: 400;
+}
+.modal__subtitle, .modal__donation__subtitle{
+  font-size: 18px;
+  line-height: 150%;
+}
+.modal__subtitle{
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+.modal__donation__subtitle{
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.modal__bold{
+  font-weight: bold;
+}
+.modal__inner hr{
+  border: 0;
+  background-color: #A4A8AE;
+  height: 1px;
+}
+.modal__amount__price{
+  display: flex;
+  justify-content: space-between;
+}
+.premodal__item.modal__item{
+  background-color: rgba(0, 160, 146, 0.5);
+  width: 80px;
+  height: 65px;
+  min-width: unset;
+  border-radius: 5px;
+}
+.modal__other{
+  margin-top: 40px;
+}
+.modal__btn {
+  background-color: rgba(0, 160, 146, 0.5);
+  width: 200px;
+  height: 65px;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.modal__other input {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 200px;
+  height: 65px;
+  box-sizing: border-box;
+  margin-left: 40px;
+}
+.modal__choose select{
+  margin-left: 40px;
+  width: 440px;
+  height: 65px;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  padding-left: 10px;
+  padding-right: 30px;
+  font-size: 18px;
+
+
+}
+.modal__other input{
+  padding-left: 10px;
+
+}
+
+.modal__choose select option{
+  background-color: #fff;
+  text-align: center;
+}
+
+.modal__choose select::-ms-expand {
+  display: none;
+}
+.modal__choose{
+  margin-top: 40px;
+  display: flex;
+}
+.modal__check{
+  margin-top: 40px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+.modal__checkbox{
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+}
+.modal__check span{
+  margin-left: 20px;
+  font-size: 18px;
+}
+.modal__footer, .modal__progress{
+  display: flex;
+  align-items: center;
+}
+.modal__progress{
+  width: 50px;
+  justify-content: space-between;
+}
+.modal__progress li{
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #00A092;
+  border-radius: 50%;
+}
+.modal__progress__done{
+  background-color: #00A092;
+}
+.modal__next{
+  margin-left: 325px;
+}
+.modal__next.modal__btn{
+  background-color: #00A092;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__next.modal__btn svg{
+  margin-left: 5px;
+}
+
+.modal__bill__field input {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 680px;
+  height: 60px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  font-size: 18px;
+}
+.modal__extra__text{
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 18px;
+  display: block;
+}
+.modal__second .modal__inner{
+  height: 745px;
+}
+.modal__back{
+  width: 200px;
+  height: 75px;
+  border: 0;
+  background: none;
+  text-decoration: underline;
+  color: #00A092;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 55px;
+  cursor: pointer;
+}
+.modal__second .modal__next.modal__btn{
+  margin-left: 70px;
+}
+
+.modal__third .modal__inner{
+  height: 740px;
+}
+.modal__third .modal__next.modal__btn{
+  margin-left: 15px;
+  background-color: #f58021;
+  width: 360px;
+}
+.modal__card__info{
+  display: flex;
+}
+
+#input-2-1, #input-2-2{
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 440px;
+  height: 60px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  font-size: 18px;
+}
+input::-webkit-input-placeholder {  color: #A4A8AE; }
+
+#input-2-2{
+  width: 200px;
+}
+.modal__bill #input-2-2{
+  width: 440px;
+
+}
+.modal__card:last-child{
+  margin-left: 40px;
+}
+.modal__date__info{
+  margin-top: 50px;
+}
+
+.modal__date__choose select{
+  width: 200px;
+  height: 65px;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  padding-left: 10px;
+  padding-right: 30px;
+  font-size: 18px;
+}
+.modal__date__choose select:last-child{
+  margin-left: 40px;
+}
+.modal__date__info{
+  margin-bottom: 100px;
+}

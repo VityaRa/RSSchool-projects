@@ -1,0 +1,62 @@
+.map__title {
+    text-transform: uppercase;
+    margin: auto;
+    padding-top: 55px;
+    padding-bottom: 85px;
+    width: 600px;
+    font-size: 54px;
+    text-align: center;
+}
+
+.map {
+    margin-bottom: 150px;
+}
+
+.map__hover {
+    filter: drop-shadow(0 0 0 rgba(245, 128, 33, 0.7));
+}
+
+.map__opacity {
+    opacity: 0;
+    cursor: pointer;
+    visibility: hidden;
+    transition: 0.3s ease-in-out 0s;
+    z-index: 1001;
+    position: relative;
+}
+.map__opacity:hover{
+    opacity: 1;
+    visibility: visible;
+}
+.map__hover-active:hover .map__opacity{
+    opacity: 1;
+    visibility: visible;
+}
+.map__icon {
+    cursor: pointer;
+}
+.map__hover-active {
+    cursor: pointer;
+    transition: fill 0.3s ease-in-out 0s;
+    filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
+}
+
+.map__hover:hover .map__hover-active, .map__hover:active .map__hover-active, .map__hover_active {
+    fill: #fff;
+}
+
+.map__hover_active-stroke {
+    opacity: 1;
+}
+
+.map__svg{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1199px) {
+    .map__title{
+        font-size: 26px !important;
+        width: 100% !important;
+    }
+}
