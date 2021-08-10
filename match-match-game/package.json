@@ -33,5 +33,6 @@
   "dependencies": {
     "@material/card": "^11.0.0",
     "@material/textfield": "^11.0.0"
-  }
+  },
+  "type": "module"
 }
