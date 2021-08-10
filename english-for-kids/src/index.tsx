@@ -9,9 +9,6 @@ import store from "./redux/store";
 import { LOCAL_ITEM } from "./utils/constants";
 import { hydrate } from "./redux/reducers/cardReducer";
 
-if (process.env.NODE_ENV === "production")
-  alert("Please, wait for 20th, i'll finish project, leave your contacts");
-
 const getData = () => {
   try {
     const persistedState = localStorage.getItem(LOCAL_ITEM);
