@@ -12,8 +12,7 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import pkg from 'mini-css-extract-plugin';
 const { loader } = pkg;
 
-import cwp from 'mini-css-extract-plugin';
-const { CleanWebpackPlugin } = cwp;
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 import CopyPlugin from 'copy-webpack-plugin';
 import ESLintPlugin from 'eslint-webpack-plugin';
